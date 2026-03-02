@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BimBa Solusi Kids Bunayya</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f8fafc;
-    color: #333;
-}
-
-header {
-    background: linear-gradient(135deg, #6366f1, #22c55e);
-    color: white;
-    padding: 70px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 20px;
-    color: #4f46e5;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.gallery img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.button {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #22c55e;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.button:hover {
-    background: #16a34a;
-}
-
-footer {
-    background: #111827;
-    color: white;
-    padding: 20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BimBa Solusi Kids Bunayya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fbfa; /* Latar belakang cerah */
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #FFD700, #32CD32); /* Gradasi Kuning ke Hijau */
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h2 {
+            color: #228B22; /* Hijau Tua */
+            margin-bottom: 20px;
+            border-bottom: 3px solid #FFD700; /* Garis bawah Kuning */
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 4px solid #FFD700; /* Bingkai Kuning pada foto */
+            background-color: #ddd;
+        }
+        .contact-info {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-top: 6px solid #32CD32; /* Garis Hijau di atas kartu kontak */
+        }
+        .contact-info p {
+            font-size: 1.1em;
+            margin: 15px 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #32CD32; /* Tombol Hijau */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #228B22;
+        }
+        .btn-maps {
+            background-color: #FFD700; /* Tombol Kuning untuk Maps */
+            color: #333;
+        }
+        .btn-maps:hover {
+            background-color: #E6C200;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
@@ -80,16 +100,11 @@ footer {
 
 <section>
     <h2>Tentang Kami</h2>
-    <p>
-    BimBa Solusi Kids Bunayya membantu anak usia dini belajar membaca 
-    dengan pendekatan individual, sabar, dan menyenangkan. 
-    Kami percaya setiap anak itu unik dan memiliki potensi luar biasa.
-    </p>
+    <p>BimBa Solusi Kids Bunayya membantu anak usia dini belajar membaca dengan pendekatan individual, sabar, dan menyenangkan. Kami percaya setiap anak itu unik dan memiliki potensi luar biasa.</p>
 </section>
 
 <section>
     <h2>Program Kami</h2>
-    <p>📘 Belajar Membaca</p>
     <p>🎨 Kegiatan Kreatif & Edukatif</p>
     <p>👶 Usia 3–6 Tahun</p>
 </section>
@@ -97,23 +112,28 @@ footer {
 <section>
     <h2>Galeri Kegiatan</h2>
     <div class="gallery">
-        <img src="https://via.placeholder.com/300" alt="Kegiatan 1">
-        <img src="https://via.placeholder.com/300" alt="Kegiatan 2">
-        <img src="https://via.placeholder.com/300" alt="Kegiatan 3">
-        <img src="https://via.placeholder.com/300" alt="Kegiatan 4">
+        <img src="./kegiatan1.jpg" alt="Kegiatan 1">
+        <img src="./kegiatan2.jpg" alt="Kegiatan 2">
+        <img src="./kegiatan3.jpg" alt="Kegiatan 3">
+        <img src="./kegiatan4.jpg" alt="Kegiatan 4">
     </div>
+    <p style="font-size: 0.9em; color: gray; margin-top: 15px;">
+    </p>
 </section>
 
 <section>
     <h2>Hubungi Kami</h2>
-    <p>📍 Alamat: (Isi alamat di sini)</p>
-    <p>📱 WhatsApp: 08xxxxxxxxxx</p>
-    <a href="https://wa.me/628xxxxxxxxxx" class="button">Daftar Sekarang</a>
+    <div class="contact-info">
+        <p>📍 <strong>Lokasi:</strong> Gunung Putri, Jawa Barat</p>
+        <p>📞 <strong>Telepon / WhatsApp:</strong> <a href="https://wa.me/6281380616906" target="_blank" style="color: #228B22; text-decoration: none; font-weight: bold;">081380616906</a></p>
+        
+        <div>
+            <a href="https://maps.google.com/?q=Bimba+Solusi+Kids+Bunayya+Gunung+Putri" target="_blank" class="btn btn-maps">🗺️ Buka di Google Maps</a>
+            
+            <a href="https://wa.me/6281380616906?text=Halo,%20saya%20ingin%20bertanya%20tentang%20BimBa%20Solusi%20Kids%20Bunayya." target="_blank" class="btn">Chat WhatsApp</a>
+        </div>
+    </div>
 </section>
-
-<footer>
-    <p>© 2026 BimBa Solusi Kids Bunayya</p>
-</footer>
 
 </body>
 </html>
